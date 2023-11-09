@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>タスクアプリ</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="title">
+      <img src="./img/title.png" alt="" />
+    </div>
+
+    <div id="husband-link">
+      旦那のタスクは<a href="./memo2.html" target="_blank">こっち</a>
+    </div>
+
+    <div id="wrap-submit-area">
+      <div id="wrap-textarea">
+        <textarea
+          id="textarea"
+          placeholder="ここにタスクを書くよ。同じ名前のタスクは入れないでね"
+        ></textarea>
+      </div>
+      <div id="wrap-submit">
+        <button id="submit">登録</button>
+      </div>
+      <div id="wrap-all-delete">
+        <button id="all-delete">全削除</button>
+      </div>
+    </div>
+
+    <div id="wrap-result-table">
+      <table>
+        <div id="result-header">
+          <tr>
+            <th class="header">タスク</th>
+            <th class="header">完了</th>
+            <th class="header">削除</th>
+          </tr>
+        </div>
+        <tbody id="result"></tbody>
+      </table>
+    </div>
+
+    <!-- js -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/javascript.js"></script>
+  </body>
+</html>
